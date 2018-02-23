@@ -63,16 +63,21 @@ h1:first-child {
   clear: both;
 }
 
-
-dt {
-  margin-right: 0.7em;
+.dl {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.dt {
   opacity: .8;
-  float: left;
-}
-dt:after {
-  content: ':';
+  font-style: italic;
+  padding-right: .7em;
 }
 
+@media screen and (max-width: 1024px) {
+  .dl {
+  }
+}
 @media screen and (min-width: 1024px) {
   .section {
     margin-top: 1em;
@@ -121,15 +126,15 @@ dt:after {
   browsers' api
 </strong>
 
-<dl>
-  <dt>frameworks</dt> <dd><strong>react/redux ☆</strong></dd>
-  <dt>configuration</dt> <dd>webpack/babel ☆, eslint, teamcity [ci], travic-ci</dd>
-  <dt>tools</dt> <dd>git ☆, <a href="https://github.com/a-x-">github</a>, unix cli ☆, macos</dd>
-  <dt>cool things</dt> <dd>http, rest api, regexp, <a href="https://en.wikipedia.org/wiki/A/B_testing">a/b</a>, <a href="https://en.wikipedia.org/wiki/i18n">l10n/i18</a>, ast parsing</dd>
-  <dt>backend</dt> <dd>node/express/mongodb, ruby/ror</dd>
-  <dt>devops</dt> <dd>docker, ansible, kubernetes</dd>
-  <dt>soft skills</dt> <dd>project management, team leading</dd>
-</dl>
+<div class="dl">
+  <div class="dt">frameworks</div> <div class="dd"><strong>react/redux ☆</strong></div>
+  <div class="dt">configuration</div> <div class="dd">webpack/babel ☆, eslint, teamcity [ci], travic-ci</div>
+  <div class="dt">tools</div> <div class="dd">git ☆, <a href="https://github.com/a-x-">github</a>, unix cli ☆, macos</div>
+  <div class="dt">cool things</div> <div class="dd">http, rest api, regexp, <a href="https://en.wikipedia.org/wiki/A/B_testing">a/b</a>, <a href="https://en.wikipedia.org/wiki/i18n">l10n/i18</a>, ast parsing</div>
+  <div class="dt">backend</div> <div class="dd">node/express/mongodb, ruby/ror</div>
+  <div class="dt">devops</div> <div class="dd">docker, ansible, kubernetes</div>
+  <div class="dt">soft skills</div> <div class="dd">project management, team leading</div>
+</div>
 
 </section>
 
