@@ -1,4 +1,6 @@
-invntrm.ru
+invntrm.ru {
+  
+  root * /var/www/invntrm.ru
+  file_server
 
-root * /var/www/invntrm.ru
-file_server
+}
